@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ComcponentsComponent } from './comcponents.component';
+import { NevegationBarComponent } from './nevegation-bar.component';
 
-describe('ComcponentsComponent', () => {
-  let component: ComcponentsComponent;
-  let fixture: ComponentFixture<ComcponentsComponent>;
+describe('NevegationBarComponent', () => {
+  let component: NevegationBarComponent;
+  let fixture: ComponentFixture<NevegationBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ComcponentsComponent]
+      imports: [NevegationBarComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ComcponentsComponent);
+    fixture = TestBed.createComponent(NevegationBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

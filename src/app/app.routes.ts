@@ -17,7 +17,7 @@ export const routes: Routes = [
 
             },
             {
-                path: "create-guide-cocmponent",
+                path: "care-guide-component",
                 title: "Care Guide",
                 loadComponent: () => import("./dashboard/pages/care-guide-component/care-guide-component.component")
             },

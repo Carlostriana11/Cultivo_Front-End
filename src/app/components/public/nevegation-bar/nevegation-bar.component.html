@@ -1,0 +1,12 @@
+<nav>
+    <img class="img" src="images/Logo final transp_Mesa de trabajo 1 copia 2.png" alt="Logo" class="Logo">
+    <button class="open-menu" (click)="openMenu()"><i class="bi bi-list"></i></button>
+    <div class="nav" [class.visible]="menuVisible">
+        <button class="clouse-menu" (click)="clouseMenu()"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="">Info Orchard</a></li>
+            <li><a href="">Create Your Garden</a></li>
+            <li><a href="">Take care of your garden</a></li>
+        </ul>
+    </div>
+</nav>
