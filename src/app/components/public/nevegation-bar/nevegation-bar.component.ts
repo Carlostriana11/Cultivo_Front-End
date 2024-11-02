@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-nevegation-bar',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './nevegation-bar.component.html',
   styleUrl: './nevegation-bar.component.css'
 })

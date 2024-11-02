@@ -1,0 +1,17 @@
+.main_text_of_page{
+    display: flex;
+    width: 100%;
+    margin: 2rem 0;
+
+    h2{
+        text-align: center;
+        margin: 0 6rem;
+    }
+}
+.main_container_of_page{
+    display: flex;
+    margin: 4rem 0;
+}
+app-button-creator-card {
+    display: flex;
+}

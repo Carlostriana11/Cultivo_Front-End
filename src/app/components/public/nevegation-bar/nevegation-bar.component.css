@@ -38,6 +38,7 @@ nav{
     gap: 3rem;
     transition: color .4 ease;
     font-size: 1rem;
+    font-weight: 600;
 }
 .nav-list li a:hover{
     /* background:#9ffc7b; */
@@ -64,6 +65,10 @@ nav{
     .clouse-menu{
         color: #ececec;
     }
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
     .nav{
         opacity: 0;
         visibility: hidden;
@@ -78,6 +83,7 @@ nav{
         background-color: #1c1c1c;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        justify-content: start;
         
     }
     .nav.visible{
