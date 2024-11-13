@@ -8,3 +8,17 @@ body{
     height: 100%;
     width: 100%;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Asegúrate de que este CSS esté en tu archivo styles.css o en el archivo de estilos globales */
+/* Centrar el modal */
+.centered-modal .mat-dialog-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050;  /* Asegúrate de que esté por encima de otros elementos */
+}
+
+  

@@ -22,6 +22,11 @@ export const routes: Routes = [
                 loadComponent: () => import("./dashboard/pages/care-guide-component/care-guide-component.component")
             },
             {
+                path: "care-guide/infoDetail/:id",
+                title: "Care Guide",
+                loadComponent: () => import("./dashboard/pages/card-detail-component/card-detail-component.component")
+            },
+            {
                 path: "create-new-care-guide",
                 title: "new Care Guide",
                 loadComponent: () => import("./dashboard/pages/new-card-creator/new-card-creator.component")
@@ -33,7 +38,8 @@ export const routes: Routes = [
             },
             {
                 path: "", redirectTo:"info-component", pathMatch:"full"
-            }
+            },
+            
             
         ]
     },

@@ -1,5 +1,5 @@
 <div class="container">
-    <form [formGroup]="newCard" (ngSubmit)="registerForm()">
+    <form [formGroup]="allUpdateInfo" (ngSubmit)="updateAllInfo()">
         <div>
             <label for="titulo">Título</label>
             <input formControlName="titulo" placeholder="Ingrese el título" type="text">
@@ -48,3 +48,4 @@
         <button type="submit">Guardar</button>
     </form>
 </div>
+

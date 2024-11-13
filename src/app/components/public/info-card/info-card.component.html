@@ -1,17 +1,23 @@
-<div class="container">
-    <div class="image">
-        <img src="https://www.fecoagro.com.ar/wp-content/uploads/2023/08/cuando-y-como-cultivar-lechugas-750x420.jpg" alt="">
-    </div>
-    <div class="title">
-        <h3>Lettuce garden</h3>
-    </div>
-    <div class="description">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, est? Quisquam ipsam at voluptatibus nobis iusto voluptatem quasi sed, vero quam iure fuga tempore commodi sapiente repellat vitae perspiciatis voluptatum quas dicta suscipit architecto reprehenderit.</p>
-    </div>
-    <div class="button">
-        <a href="">info</a>
-    </div>
-</div>
+<ul class="container_ul">
+    <li class="container_li" *ngFor="let huerta of huertas">
+        <div class="container">
+            <div class="image">
+                <img [src]="huerta.image" [alt]="huerta.titulo">
+            </div>
+            <div class="title">
+                <h3>{{ huerta.titulo }}</h3>
+            </div>
+            <div class="description">
+                <p>{{ huerta.description }}</p>
+            </div>
+            <div class="button">
+                <a [routerLink]="['infoDetail', huerta._id]">info</a>
+            </div>
+        </div> 
+    </li>
+    
+    <app-button-creator-card></app-button-creator-card>
+</ul>
 
 
 

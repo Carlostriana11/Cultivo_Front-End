@@ -10,8 +10,21 @@
 }
 .main_container_of_page{
     display: flex;
-    margin: 4rem 0;
+    margin: 2rem;
 }
-app-button-creator-card {
-    display: flex;
+@media (max-width: 767px){
+    .main_container_of_page{
+        display: flex;
+        margin: 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .main_container_of_page{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
 }

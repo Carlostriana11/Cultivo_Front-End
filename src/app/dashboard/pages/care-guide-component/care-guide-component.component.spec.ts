@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import CareGuideComponentComponent from './care-guide-component.component';
 
-import { CareGuideComponentComponent } from './care-guide-component.component';
 
 describe('CareGuideComponentComponent', () => {
   let component: CareGuideComponentComponent;
