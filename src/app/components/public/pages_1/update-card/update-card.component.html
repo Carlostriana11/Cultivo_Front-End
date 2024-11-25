@@ -1,0 +1,52 @@
+<div class="container">
+    <form [formGroup]="allUpdateInfo" (ngSubmit)="updateAllInfo()">
+        <div>
+            <label for="titulo">Título</label>
+            <input formControlName="titulo" placeholder="Ingrese el título" type="text">
+        </div>
+
+        <div>
+            <label for="image">Imagen URL</label>
+            <input formControlName="image" type="url" placeholder="Ingrese la URL de la imagen">
+        </div>
+
+        <div>
+            <label for="description">Descripción</label>
+            <textarea formControlName="description" placeholder="Ingrese la descripción"></textarea>
+        </div>
+
+        <div>
+            <label for="ubicacion">Ubicación</label>
+            <textarea formControlName="ubicacion" placeholder="Ingrese la ubicación"></textarea>
+        </div>
+
+        <div>
+            <label for="climaIdeal">Clima Ideal</label>
+            <textarea formControlName="climaIdeal" placeholder="Ingrese el clima ideal"></textarea>
+        </div>
+
+        <div>
+            <label for="motivo">Motivo</label>
+            <textarea formControlName="motivo" placeholder="Ingrese el motivo"></textarea>
+        </div>
+
+        <div>
+            <label for="timepoDeCrecimiento">Tiempo de Crecimiento</label>
+            <textarea formControlName="timepoDeCrecimiento" placeholder="Ingrese el tiempo de crecimiento"></textarea>
+        </div>
+        
+        <div>
+            <label for="momentoDecosecha">Momento de Cosecha</label>
+            <textarea formControlName="momentoDecosecha" placeholder="Ingrese el momento de cosecha"></textarea>
+        </div>
+        
+
+        <div>
+            <label for="frecuenciaDeRiego">Frecuencia de Riego</label>
+            <textarea formControlName="frecuenciaDeRiego" placeholder="Ingrese la frecuencia de riego" type="text"></textarea>
+        </div>
+
+        <button type="submit">Guardar</button>
+    </form>
+</div>
+

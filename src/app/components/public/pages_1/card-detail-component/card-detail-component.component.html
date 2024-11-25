@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="title">
+        <h2>{{huerta[0].titulo }}</h2>
+    </div>
+    <div class="image">
+        <img [src]="huerta[0].image" [alt]="huerta?.titulo">
+    </div>
+    <div class="container_text">
+        <div class="description">
+            <p>{{ huerta[0].description }}</p>
+        </div>
+        <div class="location">
+            <h3>ubicacion</h3>
+            <p>{{huerta[0].ubicacion}}</p>
+        </div>
+    </div>
+    
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="bi bi-sun"></i></div>
+            <div class="timeline-content">
+            <h4>Clima Ideal</h4>
+            <p>{{huerta[0].climaIdeal}}</p>
+            <p><strong>Motivo:</strong> {{huerta[0].motivo}}</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="bi bi-clock"></i></div>
+            <div class="timeline-content">
+            <h4>Tiempo de Crecimiento</h4>
+            <p>{{huerta[0].tiempoDeCrecimiento}}</p>
+            <p><strong>Momento de Cosecha:</strong>{{huerta[0].momentoDecosecha
+            }}</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="bi bi-droplet-half"></i></div>
+            <div class="timeline-content">
+            <h4>Frecuencia de Riego</h4>
+            <p>{{huerta[0].frecuenciaDeRiego}}</p>
+            </div>
+        </div>
+        </div>
+        <div class="buttons">
+            <button (click)="deleteInfo(huerta[0]._id )" class="button button-trash"> 
+                <i class="bi bi-trash"></i> 
+                
+                Basura 
+            </button> 
+            <button (click)="editAllInfo(huerta[0]._id)" class="button button-edit"> 
+                <i class="bi bi-pencil"></i> 
+                Editar 
+            </button>
+        </div>
+        
+    
+</div>

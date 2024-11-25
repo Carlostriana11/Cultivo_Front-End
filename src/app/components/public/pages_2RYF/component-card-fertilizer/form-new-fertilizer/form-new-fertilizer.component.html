@@ -1,0 +1,23 @@
+<form action="#" [formGroup]="postAllFertilizer" (ngSubmit)="postNewFertilizer()">
+    <div>
+        <label>Título</label>
+        <input formControlName="titulo" type="text">
+        <small *ngIf="postAllFertilizer.get('titulo')?.value?.length">Caracteres: {{ postAllFertilizer.get('titulo')?.value?.length }} / 50</small>
+    </div>
+
+    <div>
+        <label for="image">imagen</label>
+        <textarea formControlName="image" id="image" name="image"></textarea>
+        <small *ngIf="postAllFertilizer.get('image')?.value?.length">Caracteres: {{ postAllFertilizer.get('image')?.value?.length }} / 560</small>
+
+    </div>
+
+    <div>
+        <label for="Description">Descripción</label>
+        <textarea formControlName="Description" id="Description" name="Description"></textarea>
+        <small *ngIf="postAllFertilizer.get('Description')?.value?.length">Caracteres: {{ postAllFertilizer.get('Description')?.value?.length }} / 560</small>
+    </div>
+    <div class="button">
+        <button type="submit">Enviar</button>
+    </div>
+</form>

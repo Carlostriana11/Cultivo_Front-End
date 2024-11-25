@@ -1,0 +1,24 @@
+<ul class="container_ul">
+    <li class="container_li" *ngFor="let fertilizer of fertilizers">
+        <div class="container">
+            <div class="image">
+                <img [src]="fertilizer.image" [alt]="fertilizer.titulo">
+            </div>
+            <div class="title">
+                <h2>{{ fertilizer.titulo }}</h2>
+            </div>
+            <div class="description">
+                <p>{{ fertilizer.Description }}</p>
+            </div>
+            <div class="buttons">
+                <button class="button-trash"(click)="deleteFedrtilizer(fertilizer._id)"><i class="bi bi-trash"></i> 
+                    basura
+                </button>
+                <button class="button-edit" (click)="updateFertelizer(fertilizer._id)"><i class="bi bi-pencil"></i>
+                    editar 
+                </button>
+            </div>
+        </div> 
+    </li> 
+    <app-button-creator-info-fertilizer></app-button-creator-info-fertilizer>
+</ul>

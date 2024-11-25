@@ -1,0 +1,45 @@
+<div class="container">
+    <form [formGroup]="allUpdateInfo" (ngSubmit)="updateAllInfo()">
+        <div>
+            <label for="titulo">Título</label>
+            <input formControlName="titulo"  placeholder="Ingrese el título" type="text">
+        </div>
+
+        <div>
+            <label for="image">Imagen URL</label>
+            <input formControlName="image" type="url" placeholder="Ingrese la URL de la imagen">
+        </div>
+
+        <div>
+            <label for="description">Descripción</label>
+            <textarea formControlName="description" placeholder="Ingrese la descripción"></textarea>
+        </div>
+
+        <div>
+            <label for="ubicacion">Ubicación</label>
+            <textarea formControlName="ubicacion" placeholder="Ingrese la ubicación"></textarea>
+        </div>
+
+        <div>
+            <label for="climaDondeSeUbica">Clima Donde Se Ubica</label>
+            <textarea formControlName="climaDondeSeUbica" placeholder="Ingrese el clima ideal"></textarea>
+        </div>
+
+        <div>
+            <label for="comoContrarrestarConsejo1">Consejo 1</label>
+            <textarea formControlName="comoContrarrestarConsejo1" placeholder="Métodos físicos para controlarlas"></textarea>
+        </div>
+
+        <div>
+            <label for="comoContrarrestarConsejo2">Consejo 2</label>
+            <textarea formControlName="comoContrarrestarConsejo2" placeholder="Control biológico"></textarea>
+        </div>
+
+        <div>
+            <label for="comoContrarrestarConsejo3">Consejo 3</label>
+            <textarea formControlName="comoContrarrestarConsejo3" placeholder="Tratamientos naturales"></textarea>
+        </div>
+
+        <button type="submit">Guardar</button>
+    </form>
+</div>

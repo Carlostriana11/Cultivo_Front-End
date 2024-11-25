@@ -1,0 +1,29 @@
+<form action="#" [formGroup]="allUpdateClima" (ngSubmit)="updateAllInfoClima()">
+    <div>
+        <label>Título</label>
+        <input formControlName="title" type="text">
+        <small *ngIf="allUpdateClima.get('title')?.value?.length">Caracteres: {{ allUpdateClima.get('title')?.value?.length }} / 50</small>
+    </div>
+
+    <div>
+        <label for="descriptionLluvia">Descripción Lluvia</label>
+        <textarea formControlName="descriptionLluvia" id="descriptionLluvia" name="descriptionLluvia"></textarea>
+        <small *ngIf="allUpdateClima.get('descriptionLluvia')?.value?.length">Caracteres: {{ allUpdateClima.get('descriptionLluvia')?.value?.length }} / 300</small>
+
+    </div>
+
+    <div>
+        <label for="descriptionCalido">Descripción Cálido</label>
+        <textarea formControlName="descriptionCalido" id="descriptionCalido" name="descriptionCalido"></textarea>
+        <small *ngIf="allUpdateClima.get('descriptionLluvia')?.value?.length">Caracteres: {{ allUpdateClima.get('descriptionLluvia')?.value?.length }} / 300</small>
+    </div>
+
+    <div>
+        <label for="descriptionSeco">Descripción Seco</label>
+        <textarea formControlName="descriptionSeco" id="descriptionSeco" name="descriptionSeco" ></textarea>
+        <small *ngIf="allUpdateClima.get('descriptionLluvia')?.value?.length">Caracteres: {{ allUpdateClima.get('descriptionLluvia')?.value?.length }} / 300</small>
+    </div>
+    <div class="button">
+        <button type="submit">Enviar</button>
+    </div>
+</form>

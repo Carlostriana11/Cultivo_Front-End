@@ -1,0 +1,48 @@
+ <ul class="container_ul">
+    <li class="conatiner_li" *ngFor="let clima of climas">
+        <div class="title">
+            <h3>{{clima.title}}</h3>
+        </div>
+        <div class="card-container">    
+            <div class="card">
+                <div class="front">
+                <h3><i class="bi bi-cloud-lightning-rain-fill"></i></h3>
+                <h4>clima lluvioso</h4>
+                </div>
+                <div class="back color1">
+                    <p>{{clima.descriptionLluvia
+                    }}</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                <h3><i class="bi bi-cloud-sun-fill"></i></h3>
+                <h4>clima calido</h4>
+
+                </div>
+                <div class="back color2">
+                    <p>{{clima.descriptionCalido}}</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                <h3><i class="bi bi-thermometer-sun"></i></h3>
+                <h4>clima seco</h4>
+                </div>
+                <div class="back color3">
+                <p>{{clima.descriptionSeco
+                }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="button-trash"(click)="deleteClima(clima._id)"><i class="bi bi-trash"></i> 
+                basura
+            </button>
+            <button class="button-edit" (click)="updateClima(clima._id)"><i class="bi bi-pencil"></i>
+                editar 
+            </button>
+        </div>
+    </li>
+    <app-button-creator-info-clima></app-button-creator-info-clima>
+</ul>

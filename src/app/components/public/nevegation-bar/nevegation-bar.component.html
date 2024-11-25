@@ -4,9 +4,10 @@
     <div class="nav" [class.visible]="menuVisible">
         <button class="clouse-menu" (click)="clouseMenu()"><i class="bi bi-x"></i></button>
         <ul class="nav-list">
-            <li><a [routerLink]="['dashboard/info']" routerLinkActive="router-link-active" >Info Orchard</a></li>
-            <li><a [routerLink]="['dashboard/create']">Create Your Orchard</a></li>
-            <li><a  [routerLink]="['dashboard/care-guide']">Take care of your Orchard</a></li>
+            <li><a  [routerLink]="['dashboard/care-guide']">cultivo</a></li>
+            <li><a [routerLink]="['dashboard/create']">riego y fertilizantes</a></li>
+            <li><a [routerLink]="['dashboard/info']" routerLinkActive="router-link-active" >plaga</a></li>
+
         </ul>
     </div>
 </nav>

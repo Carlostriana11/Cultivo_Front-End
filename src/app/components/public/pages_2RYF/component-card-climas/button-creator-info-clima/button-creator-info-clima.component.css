@@ -1,0 +1,23 @@
+.container_image{
+    width: auto;
+    height: auto;
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a{
+        list-style: none;
+        text-decoration: none;
+        color: #92692b;
+
+        .bi-plus-square-fill::before {
+            content: "\f4fa";
+            font-size: 10rem;
+            justify-content: center;
+            display: flex;
+            align-content: center;
+
+        }
+    }
+}

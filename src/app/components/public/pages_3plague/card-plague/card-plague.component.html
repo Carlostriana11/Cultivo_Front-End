@@ -1,0 +1,20 @@
+<ul class="container_ul">
+    <li class="container_li" *ngFor="let plague of plagues">
+        <div class="container">
+            <div class="image">
+                <img [src]="plague.image" [alt]="plague.titulo">
+            </div>
+            <div class="title">
+                <h3>{{ plague.titulo }}</h3>
+            </div>
+            <div class="description">
+                <p>{{ plague.description }}</p>
+            </div>
+            <div class="button">
+                <a [routerLink]="['infoDetail', plague._id]">info</a>
+            </div>
+        </div> 
+    </li>
+    
+    <app-button-creator-plague></app-button-creator-plague>
+</ul>

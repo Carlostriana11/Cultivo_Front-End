@@ -1,0 +1,30 @@
+<form action="#" [formGroup]="newInfoClimate" (ngSubmit)="postNewClimate()">
+    <div>
+        <label>Título</label>
+        <input formControlName="title" type="text">
+        <small *ngIf="newInfoClimate.get('title')?.value?.length">Caracteres: {{ newInfoClimate.get('title')?.value?.length }} / 50</small>
+    </div>
+
+    <div>
+        <label for="descriptionLluvia">Descripción Lluvia</label>
+        <textarea formControlName="descriptionLluvia" id="descriptionLluvia" name="descriptionLluvia"></textarea>
+        <small *ngIf="newInfoClimate.get('descriptionLluvia')?.value?.length">Caracteres: {{ newInfoClimate.get('descriptionLluvia')?.value?.length }} / 300</small>
+    </div>
+
+    <div>
+        <label for="descriptionCalido">Descripción Cálido</label>
+        <textarea formControlName="descriptionCalido" id="descriptionCalido" name="descriptionCalido"></textarea>
+        <small *ngIf="newInfoClimate.get('descriptionCalido')?.value?.length">Caracteres: {{ newInfoClimate.get('descriptionCalido')?.value?.length }} / 300</small>
+    </div>
+
+    <div>
+        <label for="descriptionSeco">Descripción Seco</label>
+        <textarea formControlName="descriptionSeco" id="descriptionSeco" name="descriptionSeco"></textarea>
+        <small *ngIf="newInfoClimate.get('descriptionSeco')?.value?.length">Caracteres: {{ newInfoClimate.get('descriptionSeco')?.value?.length }} / 300</small>
+    </div>
+
+    <div class="button">
+        <button type="submit">Enviar</button>
+    </div>
+</form>
+
