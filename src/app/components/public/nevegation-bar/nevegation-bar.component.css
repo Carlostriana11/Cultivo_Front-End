@@ -38,6 +38,7 @@ nav{
     transition: color .4 ease;
     font-size: 1rem;
     font-weight: 600;
+    text-transform: capitalize;
 }
 .nav-list li a:hover{
     /* background:#9ffc7b; */

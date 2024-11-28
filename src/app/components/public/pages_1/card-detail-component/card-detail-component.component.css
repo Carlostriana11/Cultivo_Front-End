@@ -170,6 +170,7 @@
         border: 1px black solid;
         border-radius: 12px;
         cursor: pointer;
+        text-transform: capitalize;
     }
 
     .button-edit {
